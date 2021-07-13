@@ -4,6 +4,66 @@
     padding:0;
     box-sizing:border-box;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 /*-------------------- hedear css styles-------------- */
+
+
+
+/* -------------favourite players list ----------------*/
+.favourite-players{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player-img img{
+    width:300px;
+}
+.player{
+    width:330px;
+    height:474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin:0 15px 24px;
+    padding:15px;
+}
+.player-description{
+    margin-top:15px;
+}
+.player-description h4{
+    font-size:2em;
+    font-weight:700;
+}
+.player-description p{
+    font-size:1.2em;
+    margin-top:15px;
+}
+
+
+
+/* ---------------------------------
+site responsive part
+---------------------------------- */
+
+
+/* -------------favourite players list ----------------*/
+@media screen and (min-width:720px){
+    
+    .favourite-players{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+}
+@media screen  and (min-width:1050px) {
+    .favourite-players{
+        display:grid;
+        grid-template-columns: repeat(3, 330px);
+        grid-column-gap:30px;
+        grid-row-gap:3px;
+    }
+}

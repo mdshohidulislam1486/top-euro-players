@@ -3,13 +3,19 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    
 }
 body{
     font-family: 'Roboto', sans-serif;
+    transition: 1s ease-in-out;
 }
 
 /*-------------------- hedear css styles-------------- */
-
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* -------------favourite players list ----------------*/
@@ -18,6 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .player-img img{
     width:300px;
@@ -29,6 +36,7 @@ body{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin:0 15px 24px;
     padding:15px;
+   
 }
 .player-description{
     margin-top:15px;
@@ -40,6 +48,23 @@ body{
 .player-description p{
     font-size:1.2em;
     margin-top:15px;
+}
+
+
+/* --------------- recorded game info---------------------- */
+.recorded-game{
+    display:grid;
+    justify-items: center;
+}
+.recorded-text{
+    width:330px;
+    height:299px;
+    display:flex;
+    flex-direction: column; 
+}
+.recorded-img img{
+   width:328px;
+   height: 248px;
 }
 
 
@@ -57,13 +82,42 @@ site responsive part
         justify-content: center;
         flex-direction: row;
         flex-wrap:wrap;
+        
     }
 }
-@media screen  and (min-width:1050px) {
+@media screen  and (min-width:1070px) {
     .favourite-players{
         display:grid;
         grid-template-columns: repeat(3, 330px);
         grid-column-gap:30px;
         grid-row-gap:3px;
+        
+    }
+}
+/* --------------- recorded game info---------------------- */
+@media screen and (min-width:720px){
+    .recorded-game{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+}
+@media screen  and (min-width:1070px) {
+    .recorded-game{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .recorded-text{
+        width: 466px;
+        height: 309px;
+        display:flex;
+        flex-direction: column;
+    }
+    .recorded-img img{
+        width: 567px;
+        height: 427px;
+        margin-left:70px;
     }
 }

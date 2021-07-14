@@ -15,6 +15,7 @@ body{
     outline:none;
     color:white;
     padding:1em 2em;
+    cursor: pointer;
 }
 .common-button span{
     margin:0 0.5em;
@@ -23,10 +24,30 @@ body{
 
 /*-------------------- hedear css styles-------------- */
 header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: darkblue;
 }
+.nav-container{
+    margin:0 auto;
+    max-width: 1060px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:2em 4em;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color:#fff;
+}
+nav ul li{
+    margin:.5em;
+}
+
 
 
 /* -------------favourite players list ----------------*/

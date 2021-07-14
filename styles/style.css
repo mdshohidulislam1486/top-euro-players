@@ -25,6 +25,7 @@ body{
 /*-------------------- hedear css styles-------------- */
 header{
     background-color: darkblue;
+    margin-bottom: 86px;
 }
 .nav-container{
     margin:0 auto;
@@ -46,6 +47,23 @@ nav ul a{
 }
 nav ul li{
     margin:.5em;
+}
+
+
+.header-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img{
+    width: 556.01px;
+    height: 438px;
+}
+.intro-text h1{
+    color:#fff;
+    width:485px;
+    margin-bottom:2em;
 }
 
 

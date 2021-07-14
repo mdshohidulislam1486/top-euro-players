@@ -12,6 +12,7 @@ body{
 .common-button{
     background-color:#E02C6D;
     border:none;
+    color:#fff;
     outline:none;
     padding:1em 2em;
     cursor: pointer;

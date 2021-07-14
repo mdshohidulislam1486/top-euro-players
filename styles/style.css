@@ -25,8 +25,11 @@ body{
 /*-------------------- hedear css styles-------------- */
 .nav-mobile{
     display: none;
-    color:white;
     font-size:2em;
+}
+.nav-mobile .fa-bars{
+    color:white;
+   
 }
 
 header{
@@ -275,5 +278,14 @@ site responsive part
 
     .intro-text h1{
         width:280px;
+    }
+}
+@media screen and (max-width:1070px){
+    .header-intro{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-row-gap: 1em;
     }
 }

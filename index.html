@@ -137,7 +137,16 @@
     </main>
 
     <footer>
-        <div class="footer-img"><img src="images/footer-icon.png" alt=""></div>
+        <div class="footer-img">
+            <picture>
+                <source media="(min-width: 720px)" srcset="images/footer/desktop-ball.png">
+                <img src="images/footer/mobile-ball.png" alt="">
+            </picture>
+            <picture>
+                <source media="(min-width: 720px)" srcset="images/footer/desktop-text.png">
+                <img src="images/footer/mobile-text.png" alt="">
+            </picture>
+        </div>
         <div class="footer-icon">
             <a href=""><i class="fab fa-instagram-square"></i></a>
             <a href=""><i class="fab fa-youtube"></i></a>

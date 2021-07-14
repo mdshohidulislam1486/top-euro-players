@@ -23,9 +23,35 @@ body{
 }
 
 /*-------------------- hedear css styles-------------- */
+.nav-mobile{
+    display: none;
+    color:white;
+    font-size:2em;
+}
+
 header{
     background-color: darkblue;
     margin-bottom: 86px;
+    transition:all 2s ease-in-out ;
+}
+
+header:hover{
+    animation: animate 5s ease-in-out 2;
+}
+@keyframes animate {
+    0%{
+        background-color: darkblue;
+    }
+    50%{
+        background-image: linear-gradient(180deg, blue, green);
+        transition:2s;
+    }
+    100%{
+        
+        background-image:linear-gradient(230deg, royalblue, purple);
+        transition:2s;
+    }
+
 }
 .nav-container{
     margin:0 auto;
@@ -65,6 +91,8 @@ nav ul li{
     width:485px;
     margin-bottom:2em;
 }
+
+
 
 
 
@@ -215,3 +243,37 @@ site responsive part
         margin-left:70px;
     }
 } 
+
+/* ------------------------heder and nav var styls-------------------- */
+
+@media screen and (max-width:720px){
+    .nav-mobile{
+        display: block;
+    }
+    .nav-container{
+        margin:0 auto;
+        max-width:100%;
+    }
+    nav{
+        display:flex;
+    }
+    nav ul{
+        display:none;
+    }
+
+    .header-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-img img{
+        width:330px;
+        height:260px;
+        margin-top:2em;
+    }
+
+    .intro-text h1{
+        width:280px;
+    }
+}

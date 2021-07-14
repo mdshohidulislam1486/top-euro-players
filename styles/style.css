@@ -104,6 +104,22 @@ footer{
 footer .copy-rights{
     margin:3em 0 1em;
 }
+.footer-icon i{
+    font-size:3em;
+    margin:0.5em 0.2em 0.1em;
+}
+.footer-icon .fa-instagram-square{
+    color:#fb3958;
+}
+.footer-icon .fa-youtube{
+    color:#FF0000;
+}
+.footer-icon .fa-facebook{
+    color: #3b5998;
+}
+.footer-icon .fa-twitter-square{
+    color:#00acee;
+}
 
 
 

@@ -13,7 +13,6 @@ body{
     background-color:#E02C6D;
     border:none;
     outline:none;
-    color:white;
     padding:1em 2em;
     cursor: pointer;
 }
@@ -21,8 +20,13 @@ body{
     margin:0 0.5em;
     font-weight:700;
 }
+.common-button a{
+    text-decoration: none;
+    color:#fff;
+}
 
 /*-------------------- hedear css styles-------------- */
+
 .nav-mobile{
     display: none;
     font-size:2em;
@@ -93,13 +97,11 @@ nav ul li{
     color:#fff;
     width:485px;
     margin-bottom:2em;
+    font-weight: 900;
 }
 
-
-
-
-
 /* -------------favourite players list ----------------*/
+
 .favourite-players{
     display:flex;
     flex-direction: column;
@@ -133,6 +135,7 @@ nav ul li{
 
 
 /* --------------- recorded game info---------------------- */
+
 .recorded-game{
     display:grid;
     justify-items: center;
@@ -199,6 +202,7 @@ site responsive part
 
 
 /* -------------favourite players list ----------------*/
+
 @media screen and (min-width:720px){
     
     .favourite-players{
@@ -219,7 +223,9 @@ site responsive part
         
     }
 }
+
 /* --------------- recorded game info---------------------- */
+
 @media screen and (min-width:720px){
     .recorded-game{
         display:grid;

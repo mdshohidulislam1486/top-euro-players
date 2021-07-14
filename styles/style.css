@@ -2,12 +2,23 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-    
+    box-sizing:border-box;  
 }
 body{
     font-family: 'Roboto', sans-serif;
     transition: 1s ease-in-out;
+}
+
+.common-button{
+    background-color:#E02C6D;
+    border:none;
+    outline:none;
+    color:white;
+    padding:1em 2em;
+}
+.common-button span{
+    margin:0 0.5em;
+    font-weight:700;
 }
 
 /*-------------------- hedear css styles-------------- */
@@ -46,7 +57,7 @@ header{
     font-weight:700;
 }
 .player-description p{
-    font-size:1.2em;
+    font-size:1em;
     margin-top:15px;
 }
 
@@ -55,16 +66,38 @@ header{
 .recorded-game{
     display:grid;
     justify-items: center;
+    margin-top:2em;
+    grid-row-gap:2em;
 }
 .recorded-text{
     width:330px;
-    height:299px;
     display:flex;
     flex-direction: column; 
+}
+.recorded-text h2{
+    padding-bottom:1em;
+}
+.recorded-text p{
+    padding-bottom:1em;
+    font-size:1.2em;
 }
 .recorded-img img{
    width:328px;
    height: 248px;
+}
+
+/*------------------------- footer style------------------------*/
+
+footer{
+    margin:20em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+footer .copy-rights{
+    margin:5em 0;
 }
 
 
@@ -100,6 +133,7 @@ site responsive part
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+        margin:5em 30px 3em;
     }
     
 }
@@ -111,7 +145,6 @@ site responsive part
     }
     .recorded-text{
         width: 466px;
-        height: 309px;
         display:flex;
         flex-direction: column;
     }
@@ -120,4 +153,4 @@ site responsive part
         height: 427px;
         margin-left:70px;
     }
-}
+} 
